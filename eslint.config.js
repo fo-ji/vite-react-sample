@@ -11,6 +11,7 @@ import pluginSimpleImportSort from 'eslint-plugin-simple-import-sort';
 import pluginUnusedImports from 'eslint-plugin-unused-imports';
 import pluginJest from 'eslint-plugin-jest';
 import pluginStylistic from '@stylistic/eslint-plugin';
+import configPrettier from 'eslint-config-prettier';
 
 const testConfig = {
   ...pluginJest.configs['flat/recommended'],
@@ -154,6 +155,7 @@ export default defineConfig([
   tsEsLint.configs.stylistic,
   reactConfig,
   importConfig,
-  stylisticConfig,
   testConfig,
+  stylisticConfig,
+  configPrettier,
 ]);
